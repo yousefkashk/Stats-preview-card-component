@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+  --main-bg: hsl(233, 47%, 7%);
+  --main-card-bg: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --main-para-trans-white: hsla(0, 0%, 100%, 0.75);
+  --stat-heading-trans-white: hsla(0, 0%, 100%, 0.6);
+}
+
+/*------------------------------
+THAT IS THE END OF WRITING UTILITY
+*/
+/*------------------------------
+THAT IS HERE WRITING BODY MAMD CENTRING THE BIG BOX
+*/
+body {
+  /*  here the display and centreng and the box model the box*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  /*  that is end of disblay and centring  */
+  /*  color and font   */
+  background: var(--main-bg);
+  color: white;
+  /* typography */
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+/*  that is code for box and it split it to two boxes */
+main {
+  width: 80rem;
+  min-height: 50vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+/*  that is end of main */
+/*  that is box1 */
+main .box1 {
+  background: var(--main-card-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box1 .box1-main {
+  width: 80%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+ 
+}
+.box1-main .main-head h1{
+      font-size: 200%;
+      margin-bottom: 1.5rem;
+}
+.box1-main .main-head p{
+   color: var(--stat-heading-trans-white);
+   margin-bottom: 1.5rem;
+   font-size: 115%;
+}
+.stat{
+  display: flex;
+  flex-direction: row;
+}
+.stat .col{
+  margin-right: 1.5rem;
+}
+/*----------------------------------------------------------------
+START WRITE CODE FOR  BOX 2 
+*/
+
+main .box2 {
+  background-image: url("./image-header-desktop.jpg") ;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+/*----------------------------------------------------------------
+  END WRITE CODE FOR BOX2
+
+*/
